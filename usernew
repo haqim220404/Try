@@ -1,0 +1,29 @@
+#!/bin/bash
+font="\e[0m"
+blue="\e[34m"
+red="\e[91m"
+white="\e[33m"
+    
+read -p "Username : " Login
+read -p "Password : " Pass
+read -p "Expired (hari): " masaaktif
+IP=`dig +short myip.opendns.com @resolver1.opendns.com`
+useradd -e `date -d "$masaaktif days" +"%Y-%m-%d"` -s /bin/false -M $Login
+exp="$(chage -l $Login | grep "Account expires" | awk -F": " '{print $2}')"
+echo -e "$Pass\n$Pass\n"|passwd $Login &> /dev/null
+echo -e ""
+echo -e "${white}Informasi SSH${font}"
+echo -e "=========-${white}account${font}-=========="
+echo -e "Host               : ${white}${IP}${font}"
+echo -e "Port OpenSSH       : ${white}22${font}"
+echo -e "Port Dropbear      : ${white}80${font}"
+echo -e "Port SSL           : ${white}443${font}"
+echo -e "Port UDPGW         : ${white}7200${font}"
+echo -e "Host Squid         : ${white}${IP}${font}"
+echo -e "Port Squid         : ${white}8080,8000${font}"
+echo -e "Username           : ${white}${Login}${font}"
+echo -e "Password           : ${white}${Pass}${font}"
+echo -e "Config Openvpn TCP : ${white}${IP}:81/client-tcp.ovpn${font}"
+echo -e "Config Openvpn UDP : \e[1;33;44m$IP:81/client-tcp.ovpn\e[0m"
+echo -e "==========================="
+echo -e "Script by ${white}Haqimsem;)${font}"
