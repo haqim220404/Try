@@ -80,7 +80,7 @@ menu() {
     case menu_num in
     1)
         usernew
-        menu
+        menuu
         akses
         ;;
     2)
