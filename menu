@@ -7,10 +7,10 @@ red="\e[91m"
 white="\e[33m"
     
 echo -e "  ${white}menu${font}    ${red}:  Menampilkan Menu Yang Ada${font}"
-echo -e "  ${white}1.${font}    ${red}:  Menambah Pengguna{font}"
+echo -e "  ${white}1.${font}    ${red}:  Menambah Pengguna${font}"
 echo -e "  ${white}2.${font}    ${red}:  Keluar${font}"
     
-read -rp "${red}Sila${font} ${white}Memasukkan${font} ${red}Nombor Pilihan Anda:${font}" nombor_menu
+read -rp "${red}Sila Memasukkan Nombor Pilihan Anda:${font}" nombor_menu
 case $nombor_menu in
 1)
     usernew
