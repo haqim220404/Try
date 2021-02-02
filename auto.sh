@@ -77,7 +77,7 @@ menu() {
     echo -e "${red}7.  Keluar${font}"
 
     read -rp "Sila masukkan nombor：" menu_num
-    case ${menu_num} in
+    case $menu_num in
     1)
         usernew
         menuu
