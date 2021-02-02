@@ -6,9 +6,9 @@ blue="\e[34m"
 red="\e[91m"
 white="\e[33m"
     
-echo -e "${white}menu${font}    ${red}:  Menampilkan Menu Yang Ada${font}"
-echo -e "${white}1.${font}    ${red}:  Menambah Pengguna{font}
-echo -e "${white}2.${font}    ${red}:  Keluar${font}
+echo -e "\e[33mmenu\e[0m    \e[91m:  Menampilkan Menu Yang Ada${font}"
+echo -e "\e[33m1.\e[0m    \e[91m:  Menambah Pengguna\e[0m
+echo -e "\e[33m2.\e[0m    \e[91m:  Keluar\e[0m
     
 read -rp "Sila Memasukkan Nombor Pilihan Anda" nombor_menu
 case $nombor_menu in
@@ -19,7 +19,7 @@ case $nombor_menu in
     exit 1
     ;;
 *)
-echo -e "${red} Sila masukkan nombor yang betul ${font}"
+echo -e "\e[91m Sila masukkan nombor yang betul \e[0m"
 esac
     
 usernew() {
