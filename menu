@@ -1,4 +1,10 @@
 #!/bin/sh
+
+#Colour
+font="\e[0m"
+blue="\e[34m"
+red="\e[91m"
+white="\e[33m"
     
 echo -e "  ${white}menu${font}    
 ${red}:  Menampilkan Menu Yang Ada${font}"
