@@ -1,10 +1,10 @@
 #!/bin/sh
 
 #Colour
-font="\e[0m"
-blue="\e[34m"
-red="\e[91m"
-white="\e[33m"
+#font="\e[0m"
+#blue="\e[34m"
+#red="\e[91m"
+#white="\e[33m"
     
 echo -e "\e[33mmenu\e[0m    \e[91m:  Menampilkan Menu Yang Ada${font}"
 echo -e "\e[33m1.\e[0m    \e[91m:  Menambah Pengguna\e[0m
