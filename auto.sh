@@ -7,7 +7,6 @@ blue="\e[34m"
 red="\e[91m"
 white="\e[33m"
 
-
 #Shortform Command
 ins="apt-get install"
 
