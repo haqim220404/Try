@@ -6,11 +6,11 @@
 #red="\e[91m"
 #white="\e[33m"
     
-echo -e "\e[33mmenu\e[0m    :  Menampilkan Menu Yang Ada${font}"
-echo -e "\e[33m1.\e[0m    :  Menambah Pengguna\e[0m
-echo -e "\e[33m2.\e[0m    :  Keluar\e[0m
+echo -e "\e[33mmenu\e[0m    :  Menampilkan Menu Yang Ada"
+echo -e "\e[33m1.\e[0m    :  Menambah Pengguna"
+echo -e "\e[33m2.\e[0m    :  Keluar"
     
-read -rp "Sila Memasukkan Nombor Pilihan Anda" nombor_menu
+read -rp "Sila Memasukkan Nombor Pilihan Anda :" nombor_menu
 case $nombor_menu in
 1)
     usernew
