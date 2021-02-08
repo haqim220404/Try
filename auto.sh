@@ -13,8 +13,6 @@ ins="apt-get install"
 #Install All File
 $ins net-tools
 
-menu
-
 #IP
 MYIP=`ifconfig eth0 | awk 'NR==2 {print $2}'`
 echo -e " ${blue}IPV4 : ${MYIP}${font}"
